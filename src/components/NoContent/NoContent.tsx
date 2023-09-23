@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import './NoContent.css'
 
+interface Count {
+    count: number
+}
+
 const NoContent = () => {
-    interface Count {
-        count: number
-    }
 
     const [countValue, setCount] = useState<Count>({count: 0})
 
