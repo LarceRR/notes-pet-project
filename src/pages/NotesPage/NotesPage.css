@@ -32,6 +32,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -47,6 +48,7 @@
     font-size: 15px;
     color: blue;
     font-weight: 200;
+    cursor: pointer;
 }
 
 .notes-waiting img {
@@ -73,8 +75,41 @@
     #root > div > div.notes > div:nth-child(2) > div {
         justify-content: flex-start;
     }
+}
 
-    #root > div > div.notes > div:nth-child(2) > div > div.notes-expanded-block {
-        height: 635px;
+@media screen and not (min-width : 1000px) {
+    #root > div > div.notes {
+        flex-direction: column;
+    }
+
+    #root > div > div.notes > div:nth-child(1) {
+        padding: 5px;
+        border-radius: 15px;
+        flex-direction: row;
+        flex-grow: unset;
+        width: 100%;
+        height: fit-content;
+        max-width: unset;
+        min-width: unset;
+    }
+
+    #root > div > div.notes > div:nth-child(1)::-webkit-scrollbar {
+        display: none;
+    }
+
+    #root > div > div.notes > div:nth-child(1) > a > div > div:nth-child(2) {
+        display: none;
+    }
+
+    #root > div > div.notes > div:nth-child(1) > a > div {
+        border: unset;
+        padding: 5px 5px;
+    }
+
+    #root > div > div.notes > div:nth-child(1) > a {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
     }
 }

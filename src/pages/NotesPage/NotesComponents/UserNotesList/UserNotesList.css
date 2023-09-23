@@ -51,3 +51,16 @@ a {
     display: flex;
     padding: 16px 10px;
 }
+
+@media screen and not (min-width : 1000px) {
+    #root > div > div.notes > div:nth-child(1) > a:nth-child(7) > div > div:nth-child(1), #root > div > div.notes > div:nth-child(1) > a > div > div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .notes-active-note {
+        border-radius: 50px;
+        background-color: #fff;
+    }
+}

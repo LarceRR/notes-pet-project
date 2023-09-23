@@ -3,7 +3,7 @@ import logo from '../../assets/titan_logo.svg'
 import './NavbarLayout.css'
 import { NavLink, Outlet } from 'react-router-dom'
 import Time from '../DateTime/Time';
-import Date from '../DateTime/Date';
+import DatePlaceholder from '../DateTime/DatePlaceholder';
 
 
 const NavbarLayout = () => {
@@ -15,7 +15,7 @@ const NavbarLayout = () => {
                     <img src={logo}></img>
                     <div>
                         <Time />
-                        <Date />
+                        <DatePlaceholder />
                     </div>
                 </div>
 

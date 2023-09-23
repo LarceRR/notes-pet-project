@@ -1,5 +1,5 @@
 .notes-expanded-block {
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px;
     margin-top: 20px;
     background-color: #DADADA;
     width: 100%;
@@ -15,24 +15,6 @@
 .notes-table-actions img {
     width: 18px;
     opacity: .3;
-}
-
-::-webkit-scrollbar {
-    width: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f100;
-    border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-background: #00000034;
-border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #0000005e;
 }
 
 .expanded-list-column-names {
@@ -107,9 +89,10 @@ background: #0000005e;
     font-size: 13px;
 }
 
-.notes-expanded-header {
+#root > div > div.notes > div:nth-child(2) > div > div.notes-expanded-header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .notes-expanded-header > button {
@@ -165,4 +148,16 @@ background: #0000005e;
 
 .expanded-list-priority {
     width: 15%;
+}
+
+@media screen and not (min-width: 1000px) {
+    .notes-expanded-block {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and not (min-width : 550px) {
+    .notes-expanded-block{
+        margin-bottom: 50px;
+    }
 }
