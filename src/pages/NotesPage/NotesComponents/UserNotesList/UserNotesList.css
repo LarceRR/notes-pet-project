@@ -1,0 +1,53 @@
+.user-notes-block > div > img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.user-notes-block > div:nth-child(2) > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.note-short {
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+.user-notes-block > div:nth-child(2) > div > img {
+    width: 13px;
+}
+
+.user-notes-block > div:nth-child(2) > div > span:nth-child(2) {
+    font-weight: 200;
+    font-size: 13px;
+    position: relative;
+}
+
+.user-notes-block > div:nth-child(2) > div > span:nth-child(2)::before {
+    content: "•";
+    position: absolute;
+    left: -10.5px;
+}
+
+.notes-active-note {
+    background-color: black;
+    color: white;
+}
+
+.notes-active-note > .user-notes-block > div:nth-child(2) > div:nth-child(1) > img {
+    filter: invert();
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.user-notes-block {
+    border-bottom: 1px solid #00000030;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 16px 10px;
+}

@@ -1,0 +1,168 @@
+.notes-expanded-block {
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 20px;
+    background-color: #DADADA;
+    width: 100%;
+    height: 780px;
+    overflow-y: auto;
+}
+
+.notes-table-actions {
+    display: flex;
+    gap: 10px
+}
+
+.notes-table-actions img {
+    width: 18px;
+    opacity: .3;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #00000034;
+border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #0000005e;
+}
+
+.expanded-list-column-names {
+    padding: 20px;
+    display: flex;
+    opacity: .3;
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-tbody >tr >td {
+    border-bottom: 1px solid #00000030;
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table {
+    background-color: #dadada;
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-1vr7spz).ant-table-wrapper .ant-table-thead >tr>td {
+    background-color: #dadada;
+    border-bottom: 1px solid #00000030;
+}
+
+.note-table-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-table-title > span:nth-child(1) {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.expanded-list-column-names span:nth-child(1) {
+    width: 70%;
+}
+
+.expanded-list-column-names span:nth-child(2) {
+    width: 15%;
+}
+
+.expanded-list-column-names span:nth-child(3) {
+    width: 10%;
+}
+
+.expanded-list-column-names span:nth-child(4) {
+    width: 5%;
+}
+
+.notes-expanded-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.ModalTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.ModalBody .notes-create-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ModalBody .notes-create-rate > ul {
+    align-self: flex-end;
+}
+
+.ModalTitle > span:nth-child(2) {
+    opacity: .5;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.notes-expanded-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes-expanded-header > button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #DADADA;
+    border: unset;
+    padding: 0px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.notes-expanded-header > button:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.notes-expanded-header > button img {
+    width: 18px;
+}
+
+.notes-expanded-header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notes-expanded-header-username {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes-expanded-header-username > span:nth-child(2) {
+    font-weight: 200;
+    opacity: .3;
+}
+
+.expanded-list-header {
+    padding: 20px;
+    display: flex;
+}
+
+.expanded-list-header > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.expanded-list-note {
+    width: 70%;
+    display: block;
+}
+
+.expanded-list-priority {
+    width: 15%;
+}

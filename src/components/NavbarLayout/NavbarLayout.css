@@ -1,0 +1,182 @@
+.header {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header > div:nth-child(1) > img {
+    width: 150px;
+}
+
+.navigator-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navigator-links > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.navigator-links > a > img, .navigator-other-links > a > img {
+    width: 20px;
+    height: 20px;
+}
+
+.navigator-links > a > img, .navigator-other-links > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root > div > div.header > div.navigator-left-body {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.navigator-link-active::after {
+    content: "";
+    bottom: 5px;
+    border-radius: 50px;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+#root > div > div.header > div.navigator-left-body > div.system-state {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navigator-other-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#root > div > div.header > div.navigator-left-body > div.navigator-other-links > a.navigator-avatar > img {
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and not (min-width : 1200px) {
+    #root > div > div.header > div:nth-child(1) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    #root > div > div.header > div:nth-child(1) > div {
+        display: flex;
+        gap: 10px;
+        opacity: .5;
+    }
+}
+
+@media screen and not (min-width : 800px) {
+    #root > div > div.header > div.navigator-left-body > div.navigator-other-links > a:nth-child(1), #root > div > div.header > div.navigator-left-body > div.navigator-other-links > a:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and not (min-width : 680px) {
+    #root > div > div.header > div:nth-child(1) > img {
+        width: 100px;
+    }
+    
+    body {
+        padding: 5px;
+    }
+
+    #root > div > div.header {
+        margin-top: 15px;
+    }
+}
+
+@media screen and not (min-width : 900px) {
+    #root > div > div.header > div.navigator-left-body > div.system-state {
+        display: none;
+    }
+
+    #root > div > div.header > div.navigator-links > a {
+        width: 35px;
+        height: 35px;
+    }
+
+    #root > div > div.header > div.navigator-links > a > img {
+        width: 18px;
+        height: 18px;
+    }
+
+    #root > div > div.header > div:nth-child(1) > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .header {
+        align-items: flex-start;
+    }
+
+    #root > div > div.header > div.navigator-links > a {
+        width: 40px;
+        height: 40px;
+    }
+
+    #root > div > div.header > div.navigator-links > a > img {
+        width: 18px;
+        height: 18px;
+    }
+
+    #root > div > div.header > div.navigator-left-body > div.navigator-other-links > a {
+        width: 40px;
+        height: 40px;
+    }
+
+    #root > div > div.header > div.navigator-left-body > div.navigator-other-links > a > img {
+        width: 18px;
+        height: 18px;
+    }
+
+    #root > div > div.header > div.navigator-left-body > div.navigator-other-links {
+        gap: 15px;
+    }
+
+    #root > div > div.header > div.navigator-left-body > div.system-state > span {
+        font-size: 15px;
+    }
+
+    #root > div > div.header > div.navigator-left-body > div.system-state {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #root > div > div.header > div.navigator-left-body {
+        align-items: center;
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+        flex-direction: column-reverse;
+    }
+}

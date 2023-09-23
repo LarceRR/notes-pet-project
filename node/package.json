@@ -1,0 +1,11 @@
+{
+  "name": "svgconverter",
+  "version": "1.0.0",
+  "description": "This script allows you to convert all of your svg files to readable and editable text",
+  "main": "iconSVGConverter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

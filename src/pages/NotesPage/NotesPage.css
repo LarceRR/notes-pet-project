@@ -1,0 +1,80 @@
+.notes {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 20px;
+    /* flex-flow: row wrap; */
+}
+
+.notes-block {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    max-height: 840px;
+    overflow-y: auto;
+}
+
+.notes-link-active {
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.notes-link-off {
+    background-color: #DADADA;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+#root > div > div.notes > div:nth-child(2) > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#root > div > div.notes > div:nth-child(2) > div > img, #root > div > div.notes > div:nth-child(2) > div > span:nth-child(2) {
+    opacity: .4;
+}
+
+.notes-waiting > span:nth-child(2) {
+    font-size: 22px;
+}
+
+.notes-waiting > span:nth-child(3) {
+    font-size: 15px;
+    color: blue;
+    font-weight: 200;
+}
+
+.notes-waiting img {
+    margin-bottom: 10px;
+    width: 60px;
+}
+
+.notes-block > div > a {
+    padding: 5px 11px 5px 11px;
+}
+
+.notes-block:nth-child(1) {
+    background-color: #DADADA;
+    flex-grow: 0.1;
+    max-width: 380px;
+    min-width: 305px;
+}
+
+.notes-block:nth-child(2) {
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    #root > div > div.notes > div:nth-child(2) > div {
+        justify-content: flex-start;
+    }
+
+    #root > div > div.notes > div:nth-child(2) > div > div.notes-expanded-block {
+        height: 635px;
+    }
+}

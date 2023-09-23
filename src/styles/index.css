@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Geologica:100,200,300,regular,500,600,700,800,900);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Geologica';
+}
+
+a {
+  position: relative;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  max-width: 1877px;
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+html, body, #root, #root > div {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #C8C8C8;
+  padding: 20px;
+}
